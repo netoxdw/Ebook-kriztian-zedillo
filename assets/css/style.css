@@ -1,0 +1,168 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+span{
+    color: #fffb00;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    background: url('/assets/img/bg\ ebook.avif') no-repeat center center/cover;
+    position: relative;
+    padding-top: 120px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 40px;
+}
+
+/* Estilo del H1 */
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* Superposición para oscurecer el fondo */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+/* Estilo del formulario */
+.lead-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+/* Estilo de los inputs y select */
+.lead-form input, 
+.lead-form select {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.lead-form input:focus, 
+.lead-form select:focus {
+    background-color: #e8f0fe;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Estilo del label */
+.lead-form label {
+    font-weight: bold;
+    margin-bottom: -0.5rem;
+    color: #333;
+}
+
+/* Estilo del botón */
+.lead-form button {
+    padding: 1rem;
+    border: none;
+    background-color: #fffb00;
+    color: #333;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.lead-form button:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Estilo responsivo para dispositivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .lead-form {
+        width: 100%;
+    }
+}
+
+/* Estilo para pantallas grandes */
+@media (min-width: 1024px) {
+    .overlay {
+        max-width: 800px;
+        margin: auto;
+        border-radius: 10px;
+        padding: 3rem;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+
+    }
+
+    .lead-form input {
+        font-size: 1.2rem;
+    }
+
+    .lead-form button {
+        font-size: 1.2rem;
+    }
+}

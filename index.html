@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de Leads - Ebook Gratuito</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>¿A qué correo te enviamos tu <span>ebook gratuito</span>?</h1>
+        <p>
+            Completa el formulario y disfruta de nuestro <span>Ebook</span> exclusivo para enriquecer
+            tu <span>experiencia humana</span> y <span>potenciar tu bienestar</span>.
+        </p>
+        <div class="overlay">
+            <form 
+            class="lead-form" 
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field" 
+            name="lead-form"
+            netlify>
+            
+            <input type="hidden" name="form-name" value="lead-form" />
+        
+            <p style="display: none;">
+                <label>¿Eres un bot? <input name="bot-field" /></label>
+            </p>
+        
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required />
+            <input type="email" name="email" placeholder="Ingresa tu correo" required />
+        
+            <label for="disciplina">Selecciona tu disciplina preferida:</label>
+            <select name="disciplina" id="disciplina" required>
+                <option value="escritura_creativa">Escritura Creativa y Journaling</option>
+                <option value="enfoque_holistico">Enfoque Holístico</option>
+                <option value="ambas">Ambas</option>
+            </select>
+        
+            <button type="submit">Obtener Ebook</button>
+        </form>
+        
+        </div>
+    </div>
+</body>
+
+</html>
