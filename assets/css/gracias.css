@@ -9,7 +9,6 @@
 body,
 html {
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +22,7 @@ span{
 /* Contenedor principal */
 .container {
     width: 100%;
+    height: 100vh;
     background: url('/assets/img/bg\ ebook.avif') no-repeat center center/cover;
     position: relative;
     padding-top: 120px;
@@ -53,8 +53,8 @@ p {
 
 /* Superposición para oscurecer el fondo */
 .overlay {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: white;
+    background-color: rgba(8, 8, 8, 0.6);
+    color: #fff;
     text-align: center;
     padding: 2rem;
     /* height: 100%; */
@@ -67,44 +67,8 @@ p {
     border-radius: 20px;
 }
 
-
-/* Estilo del formulario */
-.lead-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    gap: 1rem;
-    margin: 0 auto;
-}
-
-/* Estilo de los inputs y select */
-.lead-form input, 
-.lead-form select {
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #f1f1f1;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.lead-form input:focus, 
-.lead-form select:focus {
-    background-color: #e8f0fe;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    outline: none;
-}
-
-/* Estilo del label */
-.lead-form label {
-    font-weight: bold;
-    margin-bottom: -0.5rem;
-    color: #333;
-}
-
 /* Estilo del botón */
-.lead-form button {
+button {
     padding: 1rem;
     border: none;
     background-color: #fffb00;
@@ -115,7 +79,7 @@ p {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.lead-form button:hover {
+button:hover {
     background-color: #3498db;
     color: #fff;
     transform: scale(1.05);
